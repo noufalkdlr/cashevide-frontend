@@ -10,6 +10,7 @@ import { TouchableOpacity } from "react-native";
 import { ArrowRightIcon, PlusCircleIcon } from 'react-native-heroicons/outline';
 import { GoogleButton } from "@/src/components/ui/GoogleButton";
 import { Input } from "@/src/components/ui/Input";
+import { Center } from "@/src/components/layout/Center";
 
 export default function WelcomeScreen() {
 

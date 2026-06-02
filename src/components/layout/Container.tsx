@@ -6,12 +6,14 @@ interface ContainerProps extends ViewProps {
   variant?: 'narrow' | 'desktop' | 'full';
   className?: string;
   safeArea?: boolean;
+  padded?: boolean;
 }
 
 export function Container({
   variant = 'full',
   className = '',
   safeArea = false,
+  padded = true,
   children,
   ...props
 }: ContainerProps) {
@@ -29,6 +31,7 @@ export function Container({
     <View
       className={twMerge(
         'flex-1 w-full mx-auto bg-background',
+        padded ? 'px-6' : '',
         getMaxWidthClass(),
         className
       )}
